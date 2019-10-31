@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# annexremote Setup
-# Copyright (C) 2017 Silvio Ankermann
+# gitannextools Setup
+# Copyright (C) 2019 Ilya Shlyakhter
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of version 3 of the GNU General Public License as published by
@@ -22,22 +22,22 @@ from codecs import open
 import versioneer
 
 def readme():
-    with open('README.md') as f:
+    with open('README.org') as f:
         return f.read()
 
 setup(
-    name='annexremote',
+    name='gitannextools',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    description='git annex special remotes made easy',
+    description='tools for working with git-annex repositories',
     long_description=readme(),
-    long_description_content_type='text/markdown',
-    url='https://github.com/Lykos153/AnnexRemote',
-    author='Silvio Ankermann',
-    author_email='silvio@booq.org',
+    long_description_content_type='text/org',
+    url='https://github.com/notestaff/gitannextools',
+    author='Ilya Shlyakhter',
+    author_email='ilyawebmail@gmail.com',
     license='GPLv3',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
 
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries :: Python Modules',
@@ -48,8 +48,8 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    keywords='git-annex remote',
-    packages=['annexremote'],
+    keywords='git-annex',
+    packages=['gitannextools'],
 
     install_requires=['future'],
     extras_require={

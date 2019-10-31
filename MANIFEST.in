@@ -1,2 +1,2 @@
 include versioneer.py
-include annexremote/_version.py
+include gitannextools/_version.py
